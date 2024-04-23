@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+  <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'">  
+</head>
+<style>
+    body
+    {
+        
+        background-color: white;
+        
+    }
+    .san{
+        font-size: 50px;
+        margin: 10px 10px 10px 10px;
+        
+        border: 2px solid yellow;
+        color: yellow;
+        height: 80px;
+        width: 80px;
+        padding-top: 15px;
+        border-radius: 50%;
+    }
+    .val_1{
+        font-size: 50px;
+        margin: 10px 10px 10px 10px;
+        border: 2px solid blue;
+        color: rgba(17, 17, 219, 0.824) ;
+        padding-top: 10px;
+        height: 80px;
+        width: 80px;
+       
+        border-radius: 50%;
+    }
+    .val_2{
+        font-size: 50px;
+        margin: 10px 10px 10px 10px;
+        color: rgb(178,235,198);
+        border: 2px solid rgb(178,235,198);
+        height: 80px;
+        width: 80px;
+        padding-top: 15px;
+        border-radius: 50%;
+    }
+    .fsiz
+    {
+        font-size: 20px;
+    }
+    .fsize
+    {
+        font-size: 20px;
+        margin-left: 610px;
+    }
+    .img1
+    {
+        margin-left: 30px;
+        width: 200px;
+        height:50px
+    }
+    #Imgbottom{
+        cursor: pointer;
+        filter: grayscale(100%);
+
+        
+    }
+    #Imgbottom:hover
+    {
+        filter: brightness(150%);
+       
+        color: #F1C40F;
+    }
+    #Imgbottom1
+    {
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
+    #Imgbottom1:hover{
+        filter: saturate();
+    }
+    .abc{
+       font-size: 40px;
+    }
+   
+</style>
+<body>
+        
+        <div class="container-fluid d-flex" style="background-color: #5B2C6F;position: fixed; z-index: 3;" >
+            <img class="img1 pt-2"  src="logo-removebg-preview.jpg" alt="" style="margin-bottom: 10px;margin-top: 10px;">
+        <div style="margin-left: 420px;margin-top: 10px;margin-bottom: 10px;">    
+        <ul class="nav ">
+            
+            <li class="nav-item fsiz dropdown text-end "  data-bs-toggle="dropdown"><a class="nav-link dropdown-toggle" href="" style="color: white;">
+                <span style="font-size: 20px;color: white;font-weight: 600;font-family: 'Times New Roman', Times, serif;">Products</span></a>
+
+                <div class="dropdown-menu mt-2">
+                <div class="dropdown-list pt-5 px-2" style="height:500px; width:1000px;">
+                    <div class="row"  style="margin-left: 10px; margin-top: -10px;">
+                        <div class="col-sm-2 bg">
+                            <h6>Contact Center Solution</h6>
+                            <hr>
+                            <p class="text-primary"><b>iCallMate-cCP</b></p>
+                            <p><i class="i fa fa-phone" aria-hidden=""></i> Inbound</p>
+                            <p><i class="i fa fa-external-link" aria-hidden=""></i> Outbound</p>
+                            <p><i class="i fa fa-tripadvisor" aria-hidden="true"></i> IVR</p>
+                            <p><i class="i fa fa-headphones" aria-hidden="true"></i> ACD</p>
+                            <p><i class="i fa fa-address-card" aria-hidden="true"></i> CRM</p>
+                            <p><i class="i fa fa-cog" aria-hidden="true"></i> API's</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <h6 style="margin-top: 19px;">CPaaS Voice</h6>
+                            <hr>
+                            <p class="text-primary"><b>iCallMate-cCP</b></p>
+                            <p><i class="i fa fa-external-link" aria-hidden="true"></i> OBD</p>
+                            <p><i class="i fa fa-tripadvisor" aria-hidden="true"></i> IVR</p>
+                            <p><i class="i fa fa-volume-control-phone" aria-hidden="true"></i> Missed Call Service</p>
+                            <p><i class="i fa fa-hand-o-up" aria-hidden="true"></i> Click2Call</p>
+                            <p><i class="i fa fa-microphone" aria-hidden="true"></i> Text to Speech</p>
+                            <p><i class="i fa fa-comments-o" aria-hidden="true"></i> Speech Recognition</p>
+                            <p><i class="i fa fa-cog" aria-hidden="true"></i> API's</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <h6 style="margin-top: 19px;">CPaaS SMS</h6>
+                            <hr>
+                            <p class="text-primary"><b>iSMSMate-sCP</b></p>
+                            <p><i class="i fa fa-envelope" aria-hidden="true"></i> Bulk SMS</p>
+                            <p><i class="i fa fa-comments-o" aria-hidden="true"></i> 2 Way SMS</p>
+                            <p><i class="i fa fa-link" aria-hidden="true"></i> Smart Link</p>
+                            <p><i class="i fa fa-cog" aria-hidden="true"></i> API's</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <h6>Unified Communication</h6>
+                            <hr>
+                            <p class="text-primary"><b>iUnifyMate-uCP</b></p>
+                            <p><i class="i fa fa-headphones" aria-hidden="true"></i> Contact Center Soltuion</p>
+                            <p><i class="i fa fa-dribbble" aria-hidden="true"></i> Social Media</p>
+                            <p><i class="i fa fa-envelope-o" aria-hidden="true"></i> E-mail</p>
+                            <p><i class="i fa fa-plane" aria-hidden="true"></i> Ticketing System</p>
+                            <p><i class="i fa fa-user-circle-o" aria-hidden="true"></i> Unified/Omni Channel Agent</p>
+                            <p><i class="i fa fa-cog" aria-hidden="true"></i> API's</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <h6>Cloud Contact Center</h6>
+                            <hr>
+                            <p class="text-primary"><b>Cloud Contact Center</b></p>
+                            <p><i class="i fa fa-headphones" aria-hidden="true"></i> Contact Center Solution</p>
+                            <p><i class="i fa fa-cog" aria-hidden="true"></i> API's</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <h6 style="margin-top: 19px;">CPaaS WhatsApp</h6>
+                            <hr>
+                            <p class="text-primary"><b>CPaaS WhatsApp</b></p>
+                            <p><i class="i fa fa-weixin" aria-hidden="true"></i> ChatBox</p>
+                            <p><i class="i fa fa-cog" aria-hidden="true"></i> API's</p>
+                            <br>
+                            <h6>Tracking Solution</h6>
+                            <hr>
+                            <p class="text-primary"><b>iTrackMate</b></p>
+                            <p><i class="i fa fa-cog" aria-hidden="true"></i> API's</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </li>
+            <li class="nav-item fsiz"><a class="nav-link" href="about.html" style="font-size: 20px;color: white;font-weight: 600;font-family: 'Times New Roman', Times, serif;">About Us</a></li>
+            <li class="nav-item fsiz"><a class="nav-link" href="contactus.html" style="font-size: 20px;color: white;font-weight: 600;font-family: 'Times New Roman', Times, serif;">Contact Us</a></li>
+            <li class="nav-item fsiz pt-1"><button type="button" class="btn " style="font-size: 20px;background-color: #5B2C6F;font-family: 'Times New Roman', Times, serif;font-weight: 600;box-shadow: 0 0 8px white;color: whitesmoke; "><i class="fa-solid fa-phone" aria-hidden="true"></i  > +91 8864078090</button></li>
+        </ul>
+    </div>
+    </div>
+    
+
+
+<div class="container-fluid">
+    <div>
+      
+        <img src="call center.jpg" alt="" style="width: 100%;height: 84vh;margin-top: 72px;">
+        <div class="row " ;>
+            <div class="col-sm-6" style="position: absolute;top: 170px;left: 110px;">
+               <strong style="color: #5B2C6F;font-size: 40px;font-weight: 600; font-family: Oswald, sans-serif;">We Innovate to Simplify</strong>
+               <p style="color:  #85929E;font-size: 25px;font-weight: 400;font-family: Slabo ;list-style: none;text-decoration: none;">Novus Connect has been the pioneer and leader in providing instant Call-connect solutions including Click-to-call. We deliver the censorious building block to serve the converging internet and telecommunication market segments.</p>
+
+               <a href="about.html" class="btn p-2" style="color: whitesmoke;background-color: #5B2C6F;">learn more</a>
+            </div>
+
+        </div>
+      
+    </div>
+
+</div>
+  <div class="text-center">
+    <p class="text-center" style="color: #F0B27A;font-weight: 400;font-size: 25px;margin-top: 25px;">Why Choose us</p>
+    <p style="font-size: 42px;font-weight: 500;color: #5B2C6F;text-decoration: underline;font-family: Oswald, sans-serif;">We're Better. Here's Why...</p>
+    <p style="font-size: 20px;font-weight: 400;margin-left: 250px;margin-right: 250px;color:  #85929E; font-family: Aleo;">Novus Connect believes that communication does not have to be as complex as it is. It is mainly working on its versatility, with whom they can satisfy their customers and highly flexible in accomplishing their targets.</p>
+  </div>
+  <div class="row" style="margin-left: 100px;margin-right: 100px;margin-top: 50px;">
+    <div class="col-sm-4"  >
+    
+        <div class="card" style="width: 330px;height: 470px;background-image: linear-gradient(#EAFAF1,#ABEBC6,#2ECC71);">
+            <div class="text-center" ><i class="fas fa-solid fa-lightbulb san"  ></i></div>
+            <div class="card-body">
+                <h4 class="card-title text-center" style="font-weight: 500;color: #5B2C6F;text-decoration: underline;">Innovation</h4>
+                <div class="card-text" style="padding: 10px 25px 10px 25px;font-size: 20px;font-weight: 400;color:  #85929E;font-family: Aleo;">Improving Quality, is Extension  of the product, Reducing operation cost, improving processes, Reducing environmental Damage, Compliances to regulations.</div>
+               
+            </div>
+
+        </div>
+    </div>
+    <div class="col-sm-4"  style=" border-radius: 10px;">
+    
+        <div class="card" style="width: 330px;height: 470px;background-image: linear-gradient(#EAFAF1,#ABEBC6,#2ECC71);">
+            <div class="text-center"  ><i class="fas fa-regular fa-thumbs-up val_1"></i></div>
+            <div class="card-body">
+                <h4 class="card-title text-center" style="font-weight: 500;color: #5B2C6F;text-decoration: underline;">Satisfaction</h4>
+                <div class="card-text" style="padding: 10px 25px 10px 25px;font-size: 20px;font-weight: 400;color:  #85929E;font-family: Aleo;">Good service is when the customer gets treatment that meets their expectation. When a customer gets a little more that what they have expected, good service become exceptional service</div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="col-sm-4"  style=" border-radius: 10px;">
+        <div class="card" style="width: 330px;height: 470px;background-image: linear-gradient(#EAFAF1,#ABEBC6,#2ECC71);">
+            <div class="text-center"  ><i class="fas fa-regular fa-flag val_2
+                "></i></div>
+            <div class="card-body">
+                <h4 class="card-title text-center" style="font-weight: 500;color: #5B2C6F;text-decoration: underline;">Leader in the domain</h4>
+                <div class="card-text" style="padding: 10px 10px 10px 10px;font-size: 20px;font-weight: 400;color:  #85929E;font-family: Aleo;">We believe that technology plays a major role in implementing and improving the process. With the same we always try to be leader in the technology in our products hence we can serve our customer in a better way which keeps us Apart from the competitor.</div>
+               
+            </div>
+
+        </div>
+    </div>
+   
+  </div>
+
+
+  <div class="container  " style="width: 1100px;height: 500px;box-shadow: 0 0 3px 3px black;margin-top: 120px;">
+    <div class="row" style="background-color: #F8F9F9;height: 480px;border-radius: 10px;">
+        <div class="col-lg-6" style="background-color:#F8F9F9 ;border-radius: 10px;">
+            
+            <div style="border-radius: 10px;">
+                <div class="mt-5" style="height: 470px;background-color: #ECF0F1;border-radius: 10px;">
+                <p class="text-center "><img src="download (1).jpg" alt="img_1" class="im1" style="border: 2px solid black;border-radius: 0px;height: 260px; width: 220px; margin-left: 230px; margin-top: 15px;border-radius: 10px;"></p>
+                <img src="football.png" alt="img_2" class="im2" style="height: 260px;width: 220px;border: 2px solid black;position: absolute;top: 1550px;margin-left: 80px; margin-top: 27px; background-color: #d9c577;border-radius: 10px;">
+                <img src="body.jpg" alt="img3" class="img_3" style="width: 200px;height: 150px;background-color: #85C1E9;border: 2px solid black;position: absolute;top:1740px;margin-left: 250px; margin-top: 30px;border-radius: 10px;" >
+                </div>
+            </div>
+        </div>
+        <div class="text-center col-sm-6 " style="margin-top: 150px;background-color: #ECF0F1;border-radius: 10px;">
+            <div class="text-center" style="margin-left: 100px;margin-right: 100px;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: 900;color: #5B2C6F;">
+            <h1 class="text-center">The Ultimate Intercommunication solution</h1>
+        </div>
+            <p class="text-center m-3" style="font-size: 20px;font-weight: 600;color:  #85929E;font-family: Aleo;">It helps you to optimize your sales process, Run Marketing campaigns, free and open source framework for building communications applications. It automate their responses to their customers and make it a personalized experience.</p>
+
+        </div>
+    </div>
+  </div>
+  <div class="container mt-4 text-center">
+    <p class="text-center " style="font-size:50px;color: #85C1E9;font-family: 'Times New Roman', Times, serif;" >product</p>
+    <div >
+        <h1 style="font-weight: 500;color: #5B2C6F;margin-left: 350px;margin-right: 350px;text-decoration: underline;font-family: Oswald, sans-serif;">We never forget you have a voice</h1>
+        <p style="font-size: 22px;font-weight: 500;margin-left: 300px;margin-right: 300px;color:  #85929E;font-family: Aleo;">Novus connect provides interactive and conversational voice services. It provides the software and hardware to convert existing Pc(s) into efficient Voice logger, interactive Voice Response (IVR) systems and Dialers, which mainly comprise of multi-channel contact solutions.</p>
+    </div>
+  </div>
+
+
+  <div class="" style="margin-top: 100px;">
+    <strong ><p class="text-center " style="font-size: 28px;color: #F0B27A;font-family: 'Times New Roman', Times, serif;">They Trust Us</p></strong>
+    <h1 class="text-center" style="text-decoration: underline;color: #5B2C6F;font-weight: 500;font-family: Oswald, sans-serif;">Our prestigious Client</h1>
+  </div>
+  
+
+  <div style="margin-top: 30px;" >
+    <div class="container mt-5" style="height: 500px; width: 1200px;">
+        <div class="row" style="margin: 10px 80px 10px;padding: 0px 10px 0px 10px;margin-bottom: 0px;margin-left: 200px;margin-right: 170px;text-decoration: underline">
+            <div class="col-sm-3" style="padding: 10px 5px 10px 10px;border-bottom: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;"  >
+                <img  src="r-1_1-removebg-preview.jpg" alt="" style="height: 80px;width: 160px;background-color: #D5D8DC; " id="Imgbottom1">
+            </div>
+            <div class="col-sm-3 " style="padding: 10px 5px 10px 10px;border-bottom: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r2_2.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;padding: 5px 0 5px 0px;"  id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="padding: 10px 5px 10px 10px;border-bottom: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r1_3.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="padding: 10px 5px 10px 10px;border-bottom: .5px solid #AAB7B8;cursor: pointer;">
+                <img src="r1_4.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            
+        </div>
+        <div class="row" style="padding: 0px 10px 0px 10px;margin-bottom: 0px;margin-left: 200px;margin-right: 170px;text-decoration: underline">
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r2_1.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3 " style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r2_2.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;padding: 5px 0 5px 0;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r2_3.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;">
+                <img src="r2_4.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            
+        </div>
+        <div class="row" style="padding: 0px 10px 0px 10px;margin-bottom: 0px;margin-left: 200px;margin-right: 170px;text-decoration: underline">
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r3_1.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3 " style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r3_2.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r3_3.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;">
+                <img src="r3_4.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            
+        </div>
+        <div class="row" style="padding: 0px 10px 0px 10px;margin-bottom: 0px;margin-left: 200px;margin-right: 170px;text-decoration: underline;">
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r4_1.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3 " style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r4_2.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r4_3.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="border-bottom: .5px solid #AAB7B8;border-top: .5px solid #AAB7B8;">
+                <img src="r4_4.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            
+        </div>
+        <div class="row" style="padding: 0px 10px 0px 10px;margin-bottom: 0px;margin-left: 200px;margin-right: 170px;text-decoration: underline;">
+            <div class="col-sm-3" style="padding: 10px 5px 10px 10px;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r5_1.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3 " style="padding: 10px 5px 10px 10px;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r5_2.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="padding: 10px 5px 10px 10px;border-top: .5px solid #AAB7B8;border-right: 1.5px solid #AAB7B8;">
+                <img src="r5_3.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            <div class="col-sm-3" style="padding: 10px 5px 10px 10px;border-top: .5px solid #AAB7B8;">
+                <img src="r5_4.jpg" alt="" style="height: 80px;width: 160px;cursor: pointer;" id="Imgbottom">
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container-fluid mt-5" style="background-color: #5B2C6F;color: #D7DBDD;"> 
+        <div class="row">
+            <div class="col-sm-3"  style="margin-top: 20px;">
+                <div style="margin-left: 60px;">
+                    <h5><strong>Product</strong></h5>
+                    <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >Contact Center</a><br>
+                    <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;" >Solution</a><br>
+                    <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >CPaaS SMS</a><br>
+                    <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >CPaas Voice</a><br>
+                    <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >United Communication</a><br>
+                    <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >Platform</a><br>
+                </div>
+                
+            </div>
+            <div class="col-sm-2"  style="margin-top: 20px;">
+                    <div style="margin-top: 35px;">
+               
+                        <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >Tracking Solution</a><br>
+                        <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >CPaas Whatsapp</a><br>
+                        <a href="contact_center_solution.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >Cloud contact - Center</a><br>
+                    </div>
+                    
+            </div>
+            <div class="col-sm-2"  style="margin-top: 20px;">
+                <h5><strong>Quick Links</strong></h5>
+                <a href="novousconn.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >Home</a><br>
+                <a href="about.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >About Us</a><br>
+                <a href="novousconn.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >Careers</a><br>
+                <a href="contactus.html" style="text-decoration: none;color: whitesmoke;font-family: Montagu Slab;" >Contact us</a><br>
+            </div>
+            <div class="col-sm-5"  style="margin-top: 20px;">
+                <h3 style="margin-top: 30px;"><strong>Subscriber to our newletter</strong></h3>
+                <p class="mt-2">Monthly digest of what's new exciting from us</p>
+                    <div class="row mt-5" >
+                    <div class="col-sm-8" >
+                    <input type="text" name="" id="" class="form-control text-center" placeholder="Email address" >
+
+                    </div>
+                    <div class="col-sm-4" >
+                    <button class="btn btn-warning">Subscribe</button>
+                    </div>
+                    </div>
+                    
+            </div>
+        </div>
+        <hr>
+        <div class="row  " >
+            <div class="col-sm-8 text-center mt-4" style="margin-bottom: 30px;">
+                <section><i></i><p style="font-size: 30px;color: #34495E;"><strong><span><i class=" fas fa-solid fa-copyright vale" style="color: white;" ></i></span>  2022  Connect. All right resrved.</strong></p></section>
+            </div>
+            <div class="col-sm-4 mt-3"  >
+                    <section class="abc"><i class="fas fa-brands fa-instagram me-3 " style="background-image: linear-gradient(blue,red,yellow);border-radius: 10px;" ></i><i class="fa-brands fa-twitter me-3 " style="color: blue;"></i><i class="fas fa-brands fa-facebook me-3 " style="color: #1B4F72;"></i><i class="fa-brands fa-facebook-messenger me-3 " style="color: #2ECC71;"></i></section>
+           
+            </div>
+        </div>
+        </div>
+            
+        </div>
+    </div>
+  </footer>
+
+        
+        
+</body>
+</html>
